@@ -18,7 +18,6 @@ public class PlayerCollisionDetection : MonoBehaviour
          void OnCollisionEnter(Collision col){
        if (col.gameObject.CompareTag("Caja"))
         {
-            // Destruye el player (este objeto)
             Destroy(gameObject);
         }
         }
