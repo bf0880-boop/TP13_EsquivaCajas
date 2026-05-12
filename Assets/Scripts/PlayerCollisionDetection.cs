@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerCollisionDetection : MonoBehaviour
 {
+    public GameTimer gameTimer;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,7 @@ public class PlayerCollisionDetection : MonoBehaviour
          void OnCollisionEnter(Collision col){
        if (col.gameObject.CompareTag("Caja"))
         {
+            gameTimer.StopTimer();
             Destroy(gameObject);
         }
         }
