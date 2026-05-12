@@ -6,7 +6,7 @@ public class CajaMovement : MonoBehaviour
 {
     public float caida;
     float initialYValue;
-    public float incrementoVelocidad = 1f;
+    public float incrementoVelocidad;
     // Start is called before the first frame update
     void Start()
     {
